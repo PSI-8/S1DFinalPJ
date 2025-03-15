@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Payment Form</title>
+</head>
+<body>
+    <h1 style="background-color: grey;">
+        <a href="Homepage.html" style="text-align: right;"><img src="Apple-Logo.png" alt="ERROR" width="70" height="50"></a>
+        <div style="text-align: right;">
+            <a href="iPhone.html">iPhone</a>
+            <a href="MacBook.html">MacBooks</a>
+            <a href="Airpods.html">AirPods</a>
+        </div>
+    </h1><br>
+
+
+<div style="text-align: center;">
+    <h1>Payment Form</h1>
+    <form action="/submit_payment" method="POST">
+        <label for="full_name">Full Name:</label>
+        <input type="text" id="Full_name" name="Full_name" required><br><br>
+
+        <label for="Email">Email:</label>
+        <input type="text" id="Email" name="Email" maxlength="16" pattern="\d{16}" required><br><br>
+
+        <h3>Choose a payment method</h3>
+              <form>
+                <input type="radio" name="web">
+                <label><img src="pay1.jpg" width="70"></label>   
+                <input type="radio" name="web">
+                <label><img src="pay2.jpg" width="70"></label>
+                <input type="radio" name="web">
+                <label><img src="pay3.jpg" width="70"></label>
+                <input type="radio" name="web">
+                <label><img src="pay4.jpg" width="70"></label>
+              </form>
+             <br><br>
+
+        <label for="Credit Card Number">Credit Card Number:</label>
+        <input type="text" id="Credit Card Number" name="Credit Card Number" required>
+
+        <label for="Password">Password:</label>
+        <input type="text" id="Password" name="Password" min="1" required><br><br>
+
+        <label for="billing_address">Billing Address:</label>
+        <textarea id="billing_address" name="billing_address" rows="4" cols="50" required></textarea><br><br>
+
+        <button type="submit"class="btn1"><a href="#">Cancel</a></button>
+        <button type="submit" class="btn2"><a href="order.html">Submit</a></button>
+    </form>
+</div>
+</body>
+</html>
